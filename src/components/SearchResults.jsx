@@ -149,8 +149,8 @@ export default function SearchResults() {
       </div>
 
       {isLoading ? (
-        Array.from({ length: 20 }).map((_, index) => (
-          <div className="results__grid">
+        <div className="results__grid">
+        {Array.from({ length: 20 }).map((_, index) => (
             <div className="movie-card skeleton" key={index}>
               <div className="skeleton__poster"></div>
               <div className="movie-card__info">
@@ -158,8 +158,8 @@ export default function SearchResults() {
                 <div className="skeleton__year"></div>
               </div>
             </div>
-          </div>
-        ))
+        ))}
+        </div>
       ) : activeSearch.trim().length > 0 && movies.length === 0 ? (
         <div className="no-results">
           <h3 className="no-results__title">No results found</h3>
