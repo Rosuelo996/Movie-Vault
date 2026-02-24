@@ -1,0 +1,154 @@
+.details {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 64px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+}
+
+.details__container {
+  position: relative;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.details__poster {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.details__info {
+  color: white;
+  max-width: 600px;
+}
+
+.details__info h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.details__meta {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.details__rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #f5c518;
+}
+
+.details__info p {
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* 
+
+TRAILER
+
+*/
+
+.trailer {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 13, 16, 0.95);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.trailer__content {
+  position: relative;
+  width: 92%;
+  max-width: 1100px;
+}
+
+.trailer__content iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: none;
+}
+
+.trailer__close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #c9a96a;
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.trailer__close:hover {
+  color: #e3c88f;
+}
+
+.trailer__btn {
+  margin-top: 40px;
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  color: #c9a96a;
+  border: 1px solid rgba(201, 169, 106, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.trailer__btn:hover {
+  background-color: rgba(201, 169, 106, 0.08);
+  border-color: #c9a96a;
+  color: #e3c88f;
+}
+
+/* 
+
+BACK BUTTON
+
+*/
+
+.back-button {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 20;
+
+  background: none;
+  border: none;
+
+  color: rgba(201, 169, 106, 0.8);
+  font-size: 20px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  color: #c9a96a;
+  transform: translateX(-3px);
+}

@@ -1,0 +1,39 @@
+.search {
+  min-height: calc(100vh - 92px);
+  background-color: #0b0d10;
+}
+
+.search__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search {
+  position: relative;
+}
+
+.search {
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 20;
+
+  background: none;
+  border: none;
+
+  color: rgba(201, 169, 106, 0.8);
+  font-size: 20px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  color: #c9a96a;
+  transform: translateX(-3px);
+}
