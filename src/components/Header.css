@@ -8,6 +8,8 @@
   display: flex;
   align-items: flex-start;
   padding-top: 25vh;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .header__overlay {
