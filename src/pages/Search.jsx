@@ -15,7 +15,7 @@ export default function Search() {
       <div className="search__container">
         <button 
         className="back-button" 
-        onClick={() => navigate(-1)}>
+        onClick={() => navigate("/search")}>
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <SearchHeader
