@@ -14,14 +14,16 @@ export default function SearchResults() {
   const activeSearch = queryParams.get("query") || "";
   const navigate = useNavigate();
 
-  const apiRoutes = {
+  
+
+  useEffect(() => {
+    const apiRoutes = {
     popular: "movie/popular",
     top_rated: "movie/top_rated",
     tv: "discover/tv",
     upcoming: "movie/upcoming",
   };
 
-  useEffect(() => {
     async function getMovies() {
       setIsLoading(true);
 
