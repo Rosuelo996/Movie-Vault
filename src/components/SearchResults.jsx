@@ -14,9 +14,8 @@ export default function SearchResults() {
   const activeSearch = queryParams.get("query") || "";
   const navigate = useNavigate();
 
-  
-
   useEffect(() => {
+
     const apiRoutes = {
     popular: "movie/popular",
     top_rated: "movie/top_rated",
