@@ -82,7 +82,7 @@
   background-color: #e3c88f;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .search-header__row {
     flex-direction: column;
     align-items: stretch;
