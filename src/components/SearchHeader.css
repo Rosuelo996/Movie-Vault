@@ -81,3 +81,25 @@
 .search-header__row button:hover {
   background-color: #e3c88f;
 }
+
+@media (max-width: 768px) {
+  .search-header__row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 0;
+    background: none;
+    border: none;
+    backdrop-filter: none;
+  }
+
+  .search-header__row input {
+    background: rgba(15, 18, 22, 0.85);
+    border: 1px solid rgba(201, 169, 106, 0.25);
+  }
+
+  .search-header__row input,
+  .search-header__row button {
+    width: 100%;
+  }
+}
