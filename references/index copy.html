@@ -20,7 +20,7 @@
           alt=""
         />
       </figure>
-      <button class="btn__menu click" onclick="openMenu()">
+      <button class="btn__menu" onClick="openMenu()">
         <i class="fa-solid fa-bars"></i>
       </button>
       <ul class="nav__link--list">
@@ -35,25 +35,25 @@
           >
         </li>
         <li class="nav__link">
-          <a class="nav__link--anchor nav__link--primary click" href="#"
+          <a class="nav__link--anchor nav__link--primary" href="#"
             >Contact Us</a
           >
         </li>
       </ul>
     </nav>
     <div class="menu__backdrop">
-      <button class="btn__menu btn__menu--close click" onclick="closeMenu()">
+      <button class="btn__menu btn__menu--close" onClick="closeMenu()">
         <i class="fa-solid fa-xmark"></i>
       </button>
       <ul class="menu__links">
         <li class="menu__list">
-          <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+          <a href="#" class="menu__link" onClick="closeMenu()">Home</a>
         </li>
         <li class="menu__list">
-          <a href="./findyourcar.html" class="menu__link" onclick="closeMenu()">Search</a>
+          <a href="./findyourcar.html" class="menu__link" onClick="closeMenu()">Search</a>
         </li>
         <li class="menu__list">
-          <a href="#" class="menu__link" onclick="closeMenu()">Sign up</a>
+          <a href="#" class="menu__link" onClick="closeMenu()">Sign up</a>
         </li>
       </ul>
     </div>
@@ -75,7 +75,7 @@
                   class="search__input"
                   onfocus="driveInCar()"
                 />
-                <button class="search__button click" onclick="onSearchClick()">
+                <button class="search__button" onClick="onSearchClick()">
                   <i class="fa-solid fa-magnifying-glass search__icon"></i>
                   <i class="fa-solid fa-spinner search__spinner hidden"></i>
                 </button>

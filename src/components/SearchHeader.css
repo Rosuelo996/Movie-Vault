@@ -82,6 +82,10 @@
   background-color: #e3c88f;
 }
 
+.search-header__row button:active {
+  transform: scale(0.96);
+}
+
 @media (max-width: 480px) {
   .search-header__row {
     flex-direction: column;

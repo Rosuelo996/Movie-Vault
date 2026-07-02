@@ -1,12 +1,10 @@
 import "./Nav.css";
-import { useNavigate } from "react-router-dom";
 import MovieVault_Logo2 from "../assets/MovieVault_Logo2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
-
-  const navigate = useNavigate();
 
   function openMenu() {
     document.body.classList.add("menu--open");
@@ -21,12 +19,14 @@ export default function Nav() {
         <div className="nav__container">
           <div className="nav__row">
             <figure>
+              <Link to="/">
               <img
                 className="nav__logo--img"
                 src={MovieVault_Logo2}
                 alt="Movie Vault logo"
-                onClick={() => navigate("/")}
               />
+              </Link>
+              
             </figure>
 
             <ul className="nav__list">
@@ -35,27 +35,26 @@ export default function Nav() {
               </button>
 
               <li className="nav__links">
-                <span className="nav__link gold" onClick={() => navigate("/")}>
+                <Link to="/" className="nav__link gold">
                   Home
-                </span>
+                </Link>
               </li>
 
               <li className="nav__links">
-                <span
+                <Link to="/search"
                   className="nav__link gold"
-                  onClick={() => navigate("/search")}
+                 
                 >
                   Find Your Movie
-                </span>
+                </Link>
               </li>
 
               <li className="nav__links">
-                <span
-                  className="nav__link nav__link--primary click"
-                  onClick={() => navigate("/")}
+                <button to="/"
+                  className="nav__link nav__link--primary disabled"
                 >
                   Contact Us
-                </span>
+                </button>
               </li>
             </ul>
           </div>
@@ -68,35 +67,26 @@ export default function Nav() {
         </button>
 
         <div className="menu__panel">
-          <span
+          <Link to="/" 
             className="menu__link"
-            onClick={() => {
-              closeMenu();
-              navigate("/");
-            }}
+            onClick={closeMenu}
           >
             Home
-          </span>
+          </Link>
 
-          <span
+          <Link to="/search"
             className="menu__link"
-            onClick={() => {
-              closeMenu();
-              navigate("/search");
-            }}
+            onClick={closeMenu}
           >
             Search
-          </span>
+          </Link>
 
-          <span
-            className="menu__link"
-            onClick={() => {
-              closeMenu();
-              navigate("/");
-            }}
+          <Link to="/"
+            className="menu__link disabled"
+            onClick={closeMenu}
           >
             About
-          </span>
+          </Link>
         </div>
       </div>
     </>
