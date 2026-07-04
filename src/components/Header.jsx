@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
-import camera_black from "../assets/camera_black.svg";
-import reel_black from "../assets/reel_black.svg";
+import camera_black2 from "../assets/camera_black2.svg"
+import reel_black2 from "../assets/reel_black2.svg";
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {
@@ -48,15 +48,15 @@ export default function Header() {
           className={`projector ${searchQuery.length > 0 ? "projector--visible" : ""}`}
         >
           <div className="projector__body-wrapper">
-            <img src={camera_black} className="projector__body" />
+            <img src={camera_black2} className="projector__body" />
 
             <img
-              src={reel_black}
+              src={reel_black2}
               className="projector__reel projector__reel--left"
             />
 
             <img
-              src={reel_black}
+              src={reel_black2}
               className="projector__reel projector__reel--right"
             />
             <div

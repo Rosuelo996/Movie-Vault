@@ -119,6 +119,7 @@
 .projector__body {
   width: 100%;
   display: block;
+  transform: translateY(10px);
 }
 
 .projector__reel {
@@ -129,16 +130,16 @@
 }
 
 .projector__reel--left {
-  width: 89px;
-  top: 6px;
-  left: 23px;
+  width: 92px;
+  top: -24px;
+  left: 28px;
   animation-direction: normal;
 }
 
 .projector__reel--right {
-  width: 60px;
-  top: 35px;
-  right: 8px;
+  width: 64px;
+  top: 2px;
+  right: 4px;
   animation-direction: reverse;
 }
 
@@ -153,8 +154,8 @@
 
 .projector__beam {
   position: absolute;
-  right: 78%;
-  top: 73%;
+  right: 89%;
+  top: 54%;
   width: 650px;
   height: 130px;
   transform: translateY(-50%);
