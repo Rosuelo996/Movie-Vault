@@ -2,7 +2,7 @@
 
 Responsive movie discovery application built with **React** and the **TMDB API**.
 
-🌐 **Live Demo:** https://movie-vault-dusky.vercel.app
+**Live Demo:** https://movie-vault-dusky.vercel.app
 
 ## Overview
 
