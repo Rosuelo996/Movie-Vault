@@ -1,29 +1,68 @@
 # Movie Vault
 
-Movie Vault is a responsive movie discovery app built with React. It allows users to browse movies, search by title, filter results, and view detailed movie information using data from the TMDB API.
+Responsive movie discovery application built with **React** and the **TMDB API**.
 
-## Live Demo
+🌐 **Live Demo:** https://movie-vault-dusky.vercel.app
 
-https://movie-vault-dusky.vercel.app
+## Overview
+
+Movie Vault is a responsive movie discovery application built with React. Users can browse popular movies, search by title, filter results, watch trailers, and explore detailed movie information using data from the TMDB API.
 
 ## Features
 
-- Browse popular movies
-- Search movies by title
-- Filter and sort movie results
-- View detailed movie pages
-- Loading skeletons for a smoother user experience
-- Fully responsive layout
+Browse popular movies
 
-## Tech Stack
+Search movies by title
 
-- React
-- Vite
-- JavaScript
-- CSS
-- TMDB API
-- Vercel
+Filter and sort results
 
-## What I Learned
+View detailed movie information
 
-This project helped me strengthen my understanding of API fetching, React state, routing, search functionality, conditional rendering, and building reusable UI components.
+Watch official trailers
+
+Loading skeletons while content is fetched
+
+Responsive design for desktop and mobile
+
+## Technologies
+
+**Frontend**
+
+React
+
+JavaScript
+
+Vite
+
+CSS
+
+React Router
+
+Axios
+
+**API**
+
+TMDB API
+
+**Deployment**
+
+Vercel
+
+GitHub
+
+## Requirements
+
+Node.js 20+
+
+npm
+
+## Installation
+
+```bash
+git clone https://github.com/Rosuelo996/movie-vault.git
+cd movie-vault
+npm install
+npm run dev
+```
+
+Open **http://localhost:5173** in your browser.
